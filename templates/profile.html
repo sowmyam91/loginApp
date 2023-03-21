@@ -2,6 +2,8 @@
 
 {% block content %}
 <h1 class="title">
-    Welcome, {{name}}!
+    Welcome, {{current_user.name}}!
 </h1>
+<p>View complete profile<a href="{{ url_for('auth.user') }}" class="navbar-item">here</a></p>
+
 {% endblock %}
